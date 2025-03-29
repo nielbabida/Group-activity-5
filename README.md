@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+
 void getUserName() {
     string name;
     cout << "Enter the name of the user: ";
@@ -10,26 +11,31 @@ void getUserName() {
     cout << "Hello " << name << endl;
 }
 
-(int &num1, int &num2) {
+
+void getNumbers(int &num1, int &num2) {
     cout << "Enter first number: ";
     cin >> num1;
     cout << "Enter second number: ";
     cin >> num2;
 }
 
-(int a, int b) {
+
+int addNumbers(int a, int b) {
     return a + b;
 }
 
-(int a, int b) {
+
+int subtractNumbers(int a, int b) {
     return a - b;
 }
 
-(int a, int b) {
+
+int multiplyNumbers(int a, int b) {
     return a * b;
 }
 
-(int a, int b) {
+
+double divideNumbers(int a, int b) {
     if (b == 0) {
         cout << "Error: Division by zero!" << endl;
         return 0;
